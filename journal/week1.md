@@ -22,9 +22,9 @@ foundation for building security-focused tooling.
    and response bodies in more detail.
 7. Compared request/response structure across curl, Postman, and the browser.
 
-![Flask terminal output](Screenshots/flask-terminal.png)
-![Postman response](Screenshots/postman-response.png)
-![curl output](Screenshots/curl-output.png)
+![Flask terminal output](screenshots/flask-terminal.png)
+![Postman response](screenshots/postman-response.png)
+![curl output](screenshots/curl-output.png)
 
 
 ## What I Learned About Request Structure
