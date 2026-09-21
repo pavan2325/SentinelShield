@@ -34,4 +34,14 @@ foundation for building security-focused tooling.
   while curl is faster for quick command-line checks.
 - Flask's terminal output logs each incoming request, which is useful 
   for debugging.
-- (Add anything else specific to what you noticed this week.)
+
+# On Flask specifically:
+
+Flask's debug mode (app.run(debug=True)) auto-reloads the server on code changes and gives more detailed error pages — useful during development.
+Every request Flask receives shows up in the terminal log with the method, path, and status code, which makes debugging much faster than guessing.
+
+# Tie-in to the security angle of SentinelShield:
+
+Understanding request structure (headers, methods, bodies) is the foundation for later detecting suspicious or malformed requests — attackers often manipulate headers or send unexpected methods.
+Noticing how "normal" requests look now will make it easier to spot anomalies later when building the security rules/logging parts of the app.
+
