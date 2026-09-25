@@ -42,6 +42,13 @@ Every request Flask receives shows up in the terminal log with the method, path,
 
 # Tie-in to the security angle of SentinelShield:
 
-Understanding request structure (headers, methods, bodies) is the foundation for later detecting suspicious or malformed requests — attackers often manipulate headers or send unexpected methods.
-Noticing how "normal" requests look now will make it easier to spot anomalies later when building the security rules/logging parts of the app.
+Understanding the structure of HTTP requests, including headers, HTTP methods, URLs, parameters, and request bodies, is an important foundation for building SentinelShield's security features. In a normal web application, requests usually follow predictable patterns. By understanding these normal patterns, SentinelShield can later identify requests that behave differently or appear suspicious.
+
+Attackers may manipulate request headers, use unexpected HTTP methods, modify parameters, inject malicious payloads, or send unusually large or repeated requests. These behaviors can be indicators of attacks such as SQL Injection, Cross-Site Scripting (XSS), Command Injection, Local File Inclusion (LFI), and brute-force attempts.
+
+For example, a normal application may commonly receive GET requests to retrieve pages and POST requests to submit form data. If SentinelShield detects an unusual method, suspicious header value, malformed request body, or repeated requests from the same IP address, it can flag the activity for further inspection.
+
+This understanding will be useful when implementing the detection rules, logging, rate limiting, and WAF functionality of SentinelShield. The application can record important request information such as the source IP, HTTP method, requested URL, headers, timestamp, and detected event. These logs can then be analyzed to identify abnormal patterns and generate security alerts.
+
+Therefore, learning how normal HTTP requests work is the first step toward developing a security system that can differentiate legitimate traffic from potentially malicious traffic. This provides the foundation for SentinelShield's future intrusion detection and web-protection capabilities.
 
