@@ -43,7 +43,7 @@ Python, Flask, requests (Python library), VS Code, Git
 | Rate Limit Exceeded    |   2    |
 | Normal (allowed)       |   17    |
 
-**Most flagged IP(s):** 
+**Most flagged IP(s): 70.77%
 
 ## Observations
 - i tracked a  attacking  tatcices and techniques  and i got how they actuall blocked in a firewalls 

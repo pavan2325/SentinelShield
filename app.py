@@ -17,7 +17,14 @@ def index():
         "body": request.get_data(as_text=True)
     }
 
-    scan_target = request.full_path + " " + " ".join(request.args.values()) + " " + request_data["body"]
+    scan_target = " ".join([
+        request.full_path,
+        " ".join(request.args.values()),
+        request_data["body"],
+        request.headers.get("User-Agent", ""),
+        request.headers.get("Cookie", "")
+    ])
+
     detection = check_request(scan_target)
 
     if detection:
