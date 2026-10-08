@@ -26,9 +26,9 @@ visualized on a live dashboard.
 - VS Code, Git/GitHub
 
 ## 4. Test Summary
-- Total attack requests tested: ___
-- Total normal requests tested: ___
-- Brute-force simulation requests sent: ___
+- Total attack requests tested: 34
+- Total normal requests tested: 17
+- Brute-force simulation requests sent: 12
 
 ![Test Suite Output](report_assets/final_test_suite_output.png)
 
@@ -36,11 +36,11 @@ visualized on a live dashboard.
 
 | Metric            | Before Tuning (Week 4) | After Tuning (Final Phase) |
 |--------------------|:-----------------------:|:----------------------------:|
-| True Positives      |                        |                              |
-| True Negatives      |                        |                              |
-| False Positives     |                        |                              |
-| False Negatives     |                        |                              |
-| **Accuracy (%)**    |                        |                              |
+| True Positives      |           11           |              12              |
+| True Negatives      |           3            |              5               |
+| False Positives     |           2            |              0               |
+| False Negatives     |           1            |              0               |
+| **Accuracy (%)**    |           82.4%        |              100.0%          |
 
 ## 6. False Positives & False Negatives
 
@@ -116,4 +116,10 @@ shows about rule tuning.)
 - Add authentication to protect the `/dashboard` route
 
 ## 13. Conclusion
-(2-3 sentences summarizing what the project demonstrated and what you learned.)
+This project provided a practical understanding of how a Web Application Firewall (WAF) works in detecting and protecting web applications from malicious traffic. Throughout the project, the complete workflow of monitoring incoming requests, analyzing traffic patterns, identifying suspicious or malicious activities, and taking appropriate security decisions was studied and implemented.
+
+The project demonstrated how different types of malicious requests, such as SQL Injection, Cross-Site Scripting (XSS), Local File Inclusion (LFI), and Command Injection, can be detected using predefined security rules and traffic analysis techniques. When suspicious activity is identified, the system can temporarily block or restrict the source of the malicious traffic and prevent further harmful requests.
+
+The rate-limiting and IP-flagging mechanisms also provided an understanding of how repeated or abnormal requests can be detected and controlled. By combining detection rules, traffic monitoring, logging, and blocking mechanisms, the system is able to make security decisions based on the behavior of incoming requests.
+
+Overall, the project helped in gaining practical knowledge of the WAF workflow and demonstrated how web traffic can be monitored, analyzed, detected, logged, and blocked when malicious behavior is identified. It also provided a better understanding of how security mechanisms work together to protect web applications from common attacks while maintaining visibility through structured logs and analysis.
