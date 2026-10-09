@@ -7,9 +7,15 @@ from logger import log_event, LOG_FILE
 
 app = Flask(__name__)
 
+def get_ip():
+    forwarded = request.headers.get("X-Forwarded-For")
+    if forwarded:
+        return forwarded.split(",")[0].strip()
+    return request.remote_addr
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    ip = request.remote_addr
+    ip = get_ip()
     body = request.get_data(as_text=True)
 
     if is_banned(ip):

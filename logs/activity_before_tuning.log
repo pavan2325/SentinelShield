@@ -1,0 +1,37 @@
+{"timestamp": "2026-09-25 21:21:55", "ip": "127.0.0.1", "category": "Normal", "action": "allowed"}
+{"timestamp": "2026-09-25 21:22:05", "ip": "127.0.0.1", "category": "SQL Injection", "action": "blocked"}
+{"timestamp": "2026-09-25 21:22:14", "ip": "127.0.0.1", "category": "Normal", "action": "allowed"}
+{"timestamp": "2026-09-25 21:22:16", "ip": "127.0.0.1", "category": "Normal", "action": "allowed"}
+{"timestamp": "2026-09-25 21:22:27", "ip": "127.0.0.1", "category": "Normal", "action": "allowed"}
+{"timestamp": "2026-09-25 21:22:27", "ip": "127.0.0.1", "category": "Normal", "action": "allowed"}
+{"timestamp": "2026-09-25 21:22:27", "ip": "127.0.0.1", "category": "Normal", "action": "allowed"}
+{"timestamp": "2026-09-25 21:22:27", "ip": "127.0.0.1", "category": "Normal", "action": "allowed"}
+{"timestamp": "2026-09-25 21:22:27", "ip": "127.0.0.1", "category": "Normal", "action": "allowed"}
+{"timestamp": "2026-09-28 22:33:26", "ip": "127.0.0.1", "category": "Normal", "action": "allowed"}
+{"timestamp": "2026-09-28 22:33:28", "ip": "127.0.0.1", "category": "Normal", "action": "allowed"}
+{"timestamp": "2026-09-28 22:33:31", "ip": "127.0.0.1", "category": "Normal", "action": "allowed"}
+{"timestamp": "2026-09-28 22:33:33", "ip": "127.0.0.1", "category": "SQL Injection", "action": "blocked"}
+{"timestamp": "2026-09-28 22:33:36", "ip": "127.0.0.1", "category": "SQL Injection", "action": "blocked"}
+{"timestamp": "2026-09-28 22:33:38", "ip": "127.0.0.1", "category": "SQL Injection", "action": "blocked"}
+{"timestamp": "2026-09-28 22:33:41", "ip": "127.0.0.1", "category": "SQL Injection", "action": "blocked"}
+{"timestamp": "2026-09-28 22:33:43", "ip": "127.0.0.1", "category": "SQL Injection", "action": "blocked"}
+{"timestamp": "2026-09-28 22:33:46", "ip": "127.0.0.1", "category": "XSS", "action": "blocked"}
+{"timestamp": "2026-09-28 22:33:48", "ip": "127.0.0.1", "category": "XSS", "action": "blocked"}
+{"timestamp": "2026-09-28 22:33:51", "ip": "127.0.0.1", "category": "XSS", "action": "blocked"}
+{"timestamp": "2026-09-28 22:33:53", "ip": "127.0.0.1", "category": "Directory Traversal", "action": "blocked"}
+{"timestamp": "2026-09-28 22:33:56", "ip": "127.0.0.1", "category": "Directory Traversal", "action": "blocked"}
+{"timestamp": "2026-09-28 22:33:58", "ip": "127.0.0.1", "category": "Command Injection", "action": "blocked"}
+{"timestamp": "2026-09-28 22:34:01", "ip": "127.0.0.1", "category": "Command Injection", "action": "blocked"}
+{"timestamp": "2026-09-28 22:34:04", "ip": "127.0.0.1", "category": "Command Injection", "action": "blocked"}
+{"timestamp": "2026-09-28 22:34:06", "ip": "127.0.0.1", "category": "Normal", "action": "allowed"}
+{"timestamp": "2026-09-28 22:34:20", "ip": "127.0.0.1", "category": "Normal", "action": "allowed"}
+{"timestamp": "2026-09-28 22:34:20", "ip": "127.0.0.1", "category": "Normal", "action": "allowed"}
+{"timestamp": "2026-09-28 22:34:20", "ip": "127.0.0.1", "category": "Normal", "action": "allowed"}
+{"timestamp": "2026-09-28 22:34:20", "ip": "127.0.0.1", "category": "Normal", "action": "allowed"}
+{"timestamp": "2026-09-28 22:34:20", "ip": "127.0.0.1", "category": "Normal", "action": "allowed"}
+{"timestamp": "2026-09-28 22:34:20", "ip": "127.0.0.1", "category": "Rate Limit Exceeded", "action": "blocked"}
+{"timestamp": "2026-09-28 22:34:20", "ip": "127.0.0.1", "category": "Rate Limit Exceeded", "action": "blocked"}
+{"timestamp": "2026-09-28 22:34:20", "ip": "127.0.0.1", "category": "Rate Limit Exceeded", "action": "blocked"}
+{"timestamp": "2026-09-28 23:34:07", "ip": "127.0.0.1", "category": "Normal", "action": "allowed"}
+{"timestamp": "2026-09-28 23:35:11", "ip": "127.0.0.1", "category": "Normal", "action": "allowed"}
+{"timestamp": "2026-09-28 23:35:24", "ip": "127.0.0.1", "category": "Normal", "action": "allowed"}
