@@ -5,10 +5,10 @@
 | | |
 |---|---|
 | **Project** | SentinelShield |
-| **Student** | YOUR NAME |
+| **Student** | Pavan Hegde |
 | **Technology** | Python, Flask |
-| **Repository** | https://github.com/YOUR_USERNAME/SentinelShield |
-| **Live Demo** | https://YOUR-APP.onrender.com/dashboard |
+| **Repository** |https://github.com/pavan2325/SentinelShield|
+| **Live Demo** |https://sentinelshield-hypw.onrender.com/dashboard|
 
 ---
 
@@ -39,7 +39,7 @@
 
 SentinelShield is a simplified Web Application Firewall (WAF) and Intrusion Detection System built with Python and Flask. It inspects every incoming HTTP request, detects common web attacks (SQL Injection, Cross-Site Scripting, Directory Traversal, Local File Inclusion, and Command Injection) using signature rules, limits abusive traffic through per-IP rate limiting, temporarily bans repeat offenders, records every decision in structured logs, and presents the results on a live dashboard.
 
-The system was validated with an automated test suite that measures true positives, true negatives, false positives, and false negatives. Rules were tuned based on the errors found, and detection accuracy improved from ___% to ___%. This report describes the theory behind the system, its design and implementation, the testing process, and the results.
+The system was validated with an automated test suite that measures true positives, true negatives, false positives, and false negatives. Rules were tuned based on the errors found, and detection accuracy improved from 29% to 89%. This report describes the theory behind the system, its design and implementation, the testing process, and the results.
 
 ---
 
@@ -240,13 +240,14 @@ Testing was run before and after rule tuning so the improvement could be measure
 
 ## 9. Results and Detection Accuracy
 
-| Metric | Before Tuning | After Tuning |
+
+| Metric   Before tuning | After tuning |
 |---|:---:|:---:|
-| True Positives | | |
-| True Negatives | | |
-| False Positives | | |
-| False Negatives | | |
-| **Accuracy (%)** | | |
+| True Positives |   11  |       12     |
+| True Negatives |   3   |       5      |
+| False Positives |  2   |       0      |
+| False Negatives |  1   |       0      |
+| **Accuracy**   | 82.4% |      100.0   |
 
 ![Normal Request Allowed](report_assets/final_normal_request_id.png)
 
@@ -286,16 +287,16 @@ Testing was run before and after rule tuning so the improvement could be measure
 
 Each log entry records a timestamp, IP address, detection category, and action. `log_summary.py` aggregates the log into the tables below.
 
-| Category | Count |
+| Category      |    Count       |
 |---|:---:|
-| SQL Injection | |
-| XSS | |
-| Directory Traversal | |
-| Local File Inclusion | |
-| Command Injection | |
-| Rate Limit Exceeded | |
-| IP Flagged (temporary ban) | |
-| Normal (allowed) | |
+| SQL Injection |      3         |
+| XSS           |      3         |
+| Directory Traversal | 2        |
+| Local File Inclusion |   1     |
+| Command Injection |    3       |
+| Rate Limit Exceeded |   3      |
+| IP Flagged (temporary ban)| 15 |
+| Normal (allowed) |     12      |
 
 **Most flagged IP:** 127.0.0.1 (all testing was local, so every event comes from one address).
 
