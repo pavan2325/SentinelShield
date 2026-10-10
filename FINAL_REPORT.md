@@ -2,7 +2,6 @@
 
 **Final Project Report**
 
-| | |
 |---|---|
 | **Project** | SentinelShield |
 | **Student** | Pavan Hegde |
