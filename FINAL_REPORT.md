@@ -2,6 +2,7 @@
 
 **Final Project Report**
 
+| | |
 |---|---|
 | **Project** | SentinelShield |
 | **Student** | Pavan Hegde |
@@ -295,7 +296,7 @@ Each log entry records a timestamp, IP address, detection category, and action. 
 | Command Injection |    3       |
 | Rate Limit Exceeded |   3      |
 | IP Flagged (temporary ban)| 15 |
-| Normal (allowed) |     12      |
+| Normal (allowed) |     12        |
 
 **Most flagged IP:** 127.0.0.1 (all testing was local, so every event comes from one address).
 
