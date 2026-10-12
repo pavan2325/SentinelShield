@@ -6,7 +6,7 @@
 |---|---|
 | **Project** | SentinelShield |
 | **Student** | Pavan Hegde |
-| **Technology** | Python, Flask |
+| **Technology** | Python, Flask,Regex-based detection engine |
 | **Repository** |https://github.com/pavan2325/SentinelShield|
 | **Live Demo** |https://sentinelshield-hypw.onrender.com/dashboard|
 
