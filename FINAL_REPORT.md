@@ -230,9 +230,9 @@ The test set included:
 
 Testing was run before and after rule tuning so the improvement could be measured.
 
-- Total attack requests tested: ___
-- Total normal requests tested: ___
-- Brute-force burst requests sent: ___
+- Total attack requests tested: 37
+- Total normal requests tested: 20
+- Brute-force burst requests sent: 17
 
 ![Test Suite Output](report_assets/final_test_suite_output.png)
 
@@ -241,13 +241,14 @@ Testing was run before and after rule tuning so the improvement could be measure
 ## 9. Results and Detection Accuracy
 
 
-| Metric   Before tuning | After tuning |
-|---|:---:|:---:|
-| True Positives |   11  |       12     |
-| True Negatives |   3   |       5      |
-| False Positives |  2   |       0      |
-| False Negatives |  1   |       0      |
-| **Accuracy**   | 82.4% |      100.0   |
+| Metric          | Before Tuning | After Tuning |
+| --------------- | ------------: | -----------: |
+| True Positives  |            11 |           12 |
+| True Negatives  |             3 |            5 |
+| False Positives |             2 |            0 |
+| False Negatives |             1 |            0 |
+| **Accuracy**    |     **82.4%** |   **100.0%** |
+
 
 ![Normal Request Allowed](report_assets/final_normal_request_id.png)
 
